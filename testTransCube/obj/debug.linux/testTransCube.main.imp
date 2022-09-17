@@ -1,0 +1,12 @@
+[Imported Modules]
+   [This]
+      [Public]
+      [Imported Classes]
+         ecere::com::Instance
+            [Instantiated]
+         ecere::com::Application
+            [Instantiated]
+        .
+   ecere
+      [Private]
+   .

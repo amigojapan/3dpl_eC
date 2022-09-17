@@ -1,0 +1,9 @@
+[Imported Modules]
+   [Private]
+   ecere
+   .
+[Defined Functions]
+   findSubString
+      [Type]
+         int64 findSubString(const char original[], const char toFind[])
+   .

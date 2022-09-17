@@ -1,0 +1,180 @@
+[Global Instance]
+[Imported Modules]
+   [Private]
+   ecere
+   [Private]
+   SyntaxHighlighting
+   .
+[Defined Data]
+   outputgedamo
+      [Type]
+         char[10000]
+   .
+[Defined Functions]
+   create_function
+      [Type]
+         void create_function(struct JSContext * ctx)
+   jsFprint
+      [Type]
+         struct JSValue jsFprint(struct JSContext * ctx, struct JSValue jsThis, int argc, struct JSValue * argv, struct _IO_FILE * f)
+   jsPrint
+      [Type]
+         struct JSValue jsPrint(struct JSContext * ctx, struct JSValue jsThis, int argc, struct JSValue * argv)
+   jsPrintErr
+      [Type]
+         struct JSValue jsPrintErr(struct JSContext * ctx, struct JSValue jsThis, int argc, struct JSValue * argv)
+   evalgedamo
+      [Type]
+         char * evalgedamo(const char * code)
+   .
+[Defined Classes]
+   MyCube
+      [Private]
+      [NoHead]
+      [Base]
+         ecere::gfx3D::meshes::Cube
+      [Defined Data Members]
+         extraStuff
+            [Private]
+            [Type]
+               int
+         .
+   .
+[Defined Data]
+   scene
+      [Type]
+         ecere::gfx3D::Object
+   cubesMap
+      [Type]
+         ecere::com::Map<String, ecere::com::Array<MyCube> >
+   camera
+      [Type]
+         ecere::gfx3D::Camera
+   defaultMaterial
+      [Type]
+         ecere::gfx3D::Material
+   ds
+      [Type]
+         ecere::gfx::DisplaySystem
+   modelViewer
+      [Type]
+         ModelViewer
+   .
+[Defined Classes]
+   eModelApp
+      [Private]
+      [Base]
+         ecere::gui::GuiApplication
+   ModelViewer
+      [Private]
+      [Base]
+         ecere::gui::Window
+      [Defined Methods]
+         clearThings
+            [Private]
+            [Type]
+               void clearThings()
+         executeCode
+            [Private]
+            [Type]
+               String executeCode(const String preprocessedCode)
+         executeDeclarations
+            [Private]
+            [Type]
+               String executeDeclarations(const String code)
+         escapequotes
+            [Private]
+            [Type]
+               char * escapequotes(char * in)
+         preprocessor
+            [Private]
+            [Type]
+               String preprocessor(const String code)
+         Read3dplLib
+            [Private]
+            [Type]
+               char * Read3dplLib()
+         .
+      [Defined Data Members]
+         _3dplJSlib
+            [Private]
+            [Type]
+               String
+         model
+            [Private]
+            [Type]
+               ecere::gfx3D::meshes::Cube
+         btnRun
+            [Private]
+            [Type]
+               ecere::gui::controls::Button
+         button1
+            [Private]
+            [Type]
+               ecere::gui::controls::Button
+         editBoxDeclarations
+            [Private]
+            [Type]
+               ecere::gui::controls::EditBox
+         lblOutput
+            [Private]
+            [Type]
+               ecere::gui::controls::Label
+         btnFind
+            [Private]
+            [Type]
+               ecere::gui::controls::Button
+         btnAdd
+            [Private]
+            [Type]
+               ecere::gui::controls::Button
+         ebFindKey
+            [Private]
+            [Type]
+               ecere::gui::controls::EditBox
+         ebIndex
+            [Private]
+            [Type]
+               ecere::gui::controls::EditBox
+         lbFinKey
+            [Private]
+            [Type]
+               ecere::gui::controls::Label
+         lblIndex
+            [Private]
+            [Type]
+               ecere::gui::controls::Label
+         lbMessage
+            [Private]
+            [Type]
+               ecere::gui::controls::Label
+         moving
+            [Private]
+            [Type]
+               bool
+         lightMoving
+            [Private]
+            [Type]
+               bool
+         startPosition
+            [Private]
+            [Type]
+               ecere::sys::Point
+         startOrientation
+            [Private]
+            [Type]
+               ecere::gfx3D::Euler
+         light
+            [Private]
+            [Type]
+               ecere::gfx::Light
+         .
+   .
+[Defined Functions]
+   ec_3dpl_qb
+      [Type]
+         void ec_3dpl_qb(const char * cubeName, float x, float y, float z)
+   ec_3dpl_cl
+      [Type]
+         void ec_3dpl_cl(const String cubeName, const char * color)
+   .

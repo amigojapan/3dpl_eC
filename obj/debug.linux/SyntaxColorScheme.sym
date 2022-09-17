@@ -1,0 +1,64 @@
+[Imported Modules]
+   ecere
+   .
+[Defined Classes]
+   KeywordType
+      [Private]
+      [Enum]
+      [Base]
+         [None]
+      [Enum Values]
+         regular = 0
+         preprocessor = 1
+         .
+   SyntaxColorScheme
+      [Private]
+      [Base]
+         [None]
+      [Defined Data Members]
+         commentColor
+            [Public]
+            [Type]
+               ecere::gfx::Color
+         charLiteralColor
+            [Public]
+            [Type]
+               ecere::gfx::Color
+         stringLiteralColor
+            [Public]
+            [Type]
+               ecere::gfx::Color
+         preprocessorColor
+            [Public]
+            [Type]
+               ecere::gfx::Color
+         numberColor
+            [Public]
+            [Type]
+               ecere::gfx::Color
+         typeColor
+            [Public]
+            [Type]
+               ecere::gfx::Color
+         defColor
+            [Public]
+            [Type]
+               ecere::gfx::Color
+         fnColor
+            [Public]
+            [Type]
+               ecere::gfx::Color
+         keywordColors
+            [Private]
+            [Type]
+               ecere::com::Array<ecere::gfx::Color>
+         .
+      [Defined Properties]
+         keywordColors
+            [Public]
+            [Set]
+            [Get]
+            [Type]
+               ecere::com::Container<ecere::gfx::Color>
+         .
+   .

@@ -1,0 +1,9 @@
+Color={};
+Color.red="red";
+Color.blue="blue";
+Color.green="green";
+Color.yellow="yellow";
+Color.black="black";
+Color.white="white";
+console={};
+console.log=result;

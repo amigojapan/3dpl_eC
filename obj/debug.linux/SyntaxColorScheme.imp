@@ -1,0 +1,27 @@
+[Imported Modules]
+   [This]
+      [Public]
+      [Imported Classes]
+         ecere::com::Array<ecere::gfx::Color>
+            [Instantiated]
+         ecere::com::Instance
+            [Instantiated]
+         ecere::com::Module
+            [Instantiated]
+        .
+   ecere
+      [Public]
+      [Imported Classes]
+         ecere::com::BuiltInContainer
+            [Instantiated]
+         ecere::gfx::Color
+            [Instantiated]
+         ecere::com::Container
+            [Imported Methods]
+               Copy
+                  [Virtual]
+               .
+         ecere::com::Array
+            [Instantiated]
+        .
+   .

@@ -1,0 +1,179 @@
+{
+   format = "Ecere IDE Workspace File",
+   version = "0.1",
+   workspace = {
+      activeCompiler = "Default",
+      bitDepth = 0,
+      addedProjects = [
+         {
+            path = "testTransCube.epj",
+            activeConfig = "Debug"
+         }
+      ],
+      openedFiles = [
+         {
+            path = "../../../../../usr/local/include/quickjs/quickjs.h",
+            state = opened,
+            lineNumber = 507,
+            position = 2,
+            scroll = {
+               0,
+               8982
+            },
+            modified = "Thu Sep 15 12:33:28 PM 2022"
+         },
+         {
+            path = "3dplJSlib.js",
+            state = opened,
+            lineNumber = 9,
+            position = 1,
+            scroll = {
+               0,
+               0
+            },
+            modified = "Thu Sep 15 11:47:13 AM 2022"
+         },
+         {
+            path = "../testMap/form2.ec",
+            state = opened,
+            lineNumber = 1,
+            position = 15,
+            scroll = {
+               0,
+               0
+            },
+            modified = "Thu Sep 15 11:47:13 AM 2022"
+         },
+         {
+            path = "../jseval/form1.ec",
+            state = opened,
+            lineNumber = 31,
+            position = 44,
+            scroll = {
+               0,
+               360
+            },
+            modified = "Thu Sep 15 11:47:13 AM 2022"
+         },
+         {
+            path = "gameObject.cpp",
+            state = opened,
+            lineNumber = 1,
+            position = 1,
+            scroll = {
+               0,
+               0
+            },
+            modified = "Thu Sep 15 11:47:13 AM 2022"
+         },
+         {
+            path = "../testTransCube/jseval_gedamo3dpl.c",
+            state = opened,
+            lineNumber = 121,
+            position = 2,
+            scroll = {
+               0,
+               1854
+            },
+            modified = "Thu Sep 15 11:47:13 AM 2022"
+         },
+         {
+            path = "../../../ecere/quickjs-2021-03-27/examples/jseval2.c",
+            state = opened,
+            lineNumber = 28,
+            position = 2,
+            scroll = {
+               0,
+               450
+            },
+            modified = "Thu Sep 15 11:47:13 AM 2022"
+         },
+         {
+            path = "../testMap/form1.ec",
+            state = closed,
+            lineNumber = 48,
+            position = 25,
+            scroll = {
+               0,
+               558
+            },
+            modified = "Mon Aug 15  8:33:02 PM 2022"
+         },
+         {
+            path = "../jseval/jseval3.c",
+            state = closed,
+            lineNumber = 1,
+            position = 1,
+            scroll = {
+               0,
+               0
+            },
+            modified = "Sat Aug  6  1:53:23 PM 2022"
+         },
+         {
+            path = "Untitled 1",
+            state = closed,
+            lineNumber = 41,
+            position = 13,
+            scroll = {
+               0,
+               648
+            },
+            modified = "Sun Oct 10  2:16:34 PM 2021"
+         },
+         {
+            path = "../jseval/jseval_gedamo1.c",
+            state = closed,
+            lineNumber = 54,
+            position = 2,
+            scroll = {
+               0,
+               846
+            },
+            modified = "Sat Aug  6  2:16:47 PM 2022"
+         },
+         {
+            path = "jseval_gedamo3dpl.c",
+            state = opened,
+            lineNumber = 9,
+            position = 1,
+            scroll = {
+               0,
+               90
+            },
+            modified = "Sat Sep 17  1:24:38 PM 2022"
+         },
+         {
+            path = "form1.ec",
+            state = opened,
+            lineNumber = 406,
+            position = 73,
+            scroll = {
+               528,
+               7110
+            },
+            modified = "Sat Sep 17  2:12:39 PM 2022"
+         }
+      ],
+      recentFiles = [
+         "/usr/local/include/quickjs/quickjs.h",
+         "/home/amigojapan/projects/3dpl2/3dpleC/form1.ec",
+         "/home/amigojapan/projects/3dpl2/3dpleC/3dplJSlib.js",
+         "/home/amigojapan/projects/3dpl2/3dpleC/jseval_gedamo3dpl.c",
+         "/home/amigojapan/projects/3dpl2/testMap/form2.ec",
+         "/home/amigojapan/projects/3dpl2/jseval/form1.ec",
+         "/home/amigojapan/projects/3dpl2/3dpleC/gameObject.cpp",
+         "/home/amigojapan/projects/3dpl2/testTransCube/jseval_gedamo3dpl.c",
+         "/home/amigojapan/ecere/quickjs-2021-03-27/examples/jseval2.c",
+         "/home/amigojapan/projects/3dpl2/testTransCube/form1.ec",
+         "/home/amigojapan/projects/3dpl2/testTransCube/gameObject.cpp",
+         "/home/amigojapan/projects/3dpl2/testMap/form1.ec",
+         "/home/amigojapan/projects/3dpl2/testTransCube/Untitled 1",
+         "/home/amigojapan/projects/3dpl2/jseval/jseval_gedamo1.c",
+         "/home/amigojapan/projects/3dpl2/jseval/jseval3.c",
+         "/home/amigojapan/ecere/ecere-sdk/samples/3D/testTransCube/form1.ec"
+      ],
+      vgLeakCheck = summary,
+      vgRedzoneSize = -1
+   }
+}

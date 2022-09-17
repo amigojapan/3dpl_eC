@@ -1,0 +1,261 @@
+[Imported Modules]
+   [This]
+      [Public]
+      [Imported Classes]
+         ecere::com::Array<MyCube>
+            [Instantiated]
+         ecere::com::Map<String, ecere::com::Array<MyCube> >
+            [Instantiated]
+         class
+            [Imported Methods]
+               OnCopy
+                  [Virtual]
+               .
+         char *
+            [Instantiated]
+         int
+            [Instantiated]
+         double
+            [Instantiated]
+         uint
+            [Instantiated]
+         String
+            [Instantiated]
+         ecere::com::Module
+            [Instantiated]
+        .
+   ecere
+      [Private]
+      [Imported Classes]
+         ecere::gfx3D::meshes::Cube
+            [Instantiated]
+            [Imported Methods]
+               Create
+               .
+            [Imported Properties]
+               size
+                  [Set]
+               .
+         ecere::gui::controls::Button
+            [Instantiated]
+            [Imported Properties]
+               opacity
+                  [Set]
+                  [Get]
+               .
+         ecere::gui::controls::EditBox
+            [Instantiated]
+            [Imported Properties]
+               multiLine
+                  [Set]
+                  [Get]
+               contents
+                  [Set]
+                  [Get]
+               multiLineContents
+                  [Get]
+               .
+         ecere::gui::controls::Label
+            [Instantiated]
+            [Imported Properties]
+               labeledWindow
+                  [Set]
+                  [Get]
+               .
+         ecere::gfx::FontResource
+            [Instantiated]
+            [Imported Properties]
+               faceName
+                  [Set]
+                  [Get]
+               size
+                  [Set]
+                  [Get]
+               .
+         ecere::gfx3D::Material
+            [Instantiated]
+         ecere::gfx3D::Object
+            [Instantiated]
+            [Imported Methods]
+               Initialize
+               Add
+               Duplicate
+               UpdateTransform
+               Free
+               .
+            [Imported Properties]
+               transform
+                  [Set]
+                  [Get]
+               material
+                  [Set]
+                  [Get]
+               .
+         ecere::gfx3D::Camera
+            [Instantiated]
+            [Imported Methods]
+               Setup
+               Update
+               .
+            [Imported Properties]
+               orientation
+                  [Set]
+                  [Get]
+               position
+                  [Set]
+                  [Get]
+               type
+                  [Set]
+                  [Get]
+               zMin
+                  [Set]
+                  [Get]
+               fov
+                  [Set]
+                  [Get]
+               .
+         ecere::gui::GuiApplication
+            [Imported Properties]
+               driver
+                  [Set]
+                  [Get]
+               .
+         ecere::gui::Window
+            [Imported Methods]
+               Update
+               Capture
+               ReleaseCapture
+               Destroy
+               .
+            [Imported Properties]
+               caption
+                  [Set]
+                  [Get]
+               background
+                  [Set]
+                  [Get]
+               borderStyle
+                  [Set]
+                  [Get]
+               hasMaximize
+                  [Set]
+                  [Get]
+               hasMinimize
+                  [Set]
+                  [Get]
+               hasClose
+                  [Set]
+                  [Get]
+               size
+                  [Set]
+                  [Get]
+               parent
+                  [Set]
+                  [Get]
+               position
+                  [Set]
+                  [Get]
+               displayDriver
+                  [Set]
+                  [Get]
+               opacity
+                  [Set]
+                  [Get]
+               foreground
+                  [Set]
+                  [Get]
+               font
+                  [Set]
+                  [Get]
+               hasVertScroll
+                  [Set]
+                  [Get]
+               scrollArea
+                  [Set]
+                  [Get]
+               anchor
+                  [Set]
+                  [Get]
+               displaySystem
+                  [Get]
+               display
+                  [Get]
+               .
+         ecere::com::MapIterator
+            [Imported Properties]
+               map
+                  [Set]
+                  [Get]
+               .
+         ecere::com::Iterator
+            [Imported Methods]
+               Index
+               Next
+               .
+            [Imported Properties]
+               data
+                  [Set]
+                  [Get]
+               .
+         ecere::com::Container
+            [Imported Methods]
+               Add
+                  [Virtual]
+               Free
+                  [Virtual]
+               .
+         ecere::com::Array
+            [Instantiated]
+         ecere::com::Map
+            [Instantiated]
+         ecere::gfx::DisplaySystem
+            [Imported Methods]
+               ClearMaterials
+               ClearTextures
+               ClearMeshes
+               .
+         ecere::gfx3D::Euler
+            [Imported Properties]
+               ecere::gfx3D::Quaternion
+                  [Set]
+                  [Get]
+               .
+         ecere::sys::Degrees
+            [Imported Properties]
+               ecere::sys::Radians
+                  [Set]
+                  [Get]
+               .
+         ecere::gui::Key
+            [Imported Properties]
+               ecere::gui::SmartKey
+                  [Get]
+               .
+         ecere::gfx::Display
+            [Imported Methods]
+               SetLight
+               SetCamera
+               DrawObject
+               .
+            [Imported Properties]
+               fogColor
+                  [Set]
+               fogDensity
+                  [Set]
+               antiAlias
+                  [Set]
+               ambient
+                  [Set]
+               .
+         ecere::gfx::Surface
+            [Imported Methods]
+               Clear
+               .
+        .
+      [Imported Functions]
+         ecere::sys::CopyString
+         ecere::com::PrintString
+         ecere::sys::GetRandom
+         ecere::gfx::GetDefaultMaterial
+        .
+   .

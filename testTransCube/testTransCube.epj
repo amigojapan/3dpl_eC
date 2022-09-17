@@ -1,0 +1,46 @@
+{
+   "Version" : 0.2,
+   "ModuleName" : "testTransCube",
+   "Options" : {
+      "Warnings" : "All",
+      "TargetType" : "Executable",
+      "TargetFileName" : "testTransCube",
+      "Libraries" : [
+         "ecere"
+      ]
+   },
+   "Configurations" : [
+      {
+         "Name" : "Debug",
+         "Options" : {
+            "Debug" : true,
+            "Optimization" : "None",
+            "PreprocessorDefinitions" : [
+               "_DEBUG"
+            ],
+            "Libraries" : [
+               "ecere",
+               "quickjs",
+               "m"
+            ],
+            "FastMath" : false
+         }
+      },
+      {
+         "Name" : "Release",
+         "Options" : {
+            "Debug" : false,
+            "Optimization" : "Speed",
+            "FastMath" : true
+         }
+      }
+   ],
+   "Files" : [
+      "form1.ec",
+      "jseval_gedamo3dpl.c"
+   ],
+   "ResourcesPath" : "",
+   "Resources" : [
+
+   ]
+}

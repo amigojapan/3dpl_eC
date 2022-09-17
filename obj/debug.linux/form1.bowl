@@ -1,0 +1,72 @@
+#: ./form1.ec:511
+msgid " by that name"
+msgstr " by that name"
+
+#: ./form1.ec:570
+msgid "0"
+msgstr "0"
+
+#: ./form1.ec:230
+msgid "3dpleC"
+msgstr "3dpleC"
+
+#: ./form1.ec:523
+msgid "Add"
+msgstr "Add"
+
+#: ./form1.ec:573
+msgid "Add or find a key"
+msgstr "Add or find a key"
+
+#: ./form1.ec:565
+msgid "Added a cube."
+msgstr "Added a cube."
+
+#: ./form1.ec:433
+msgid "Code Editor"
+msgstr "Code Editor"
+
+#: ./form1.ec:570
+msgid "Cube Index"
+msgstr "Cube Index"
+
+#: ./form1.ec:569
+msgid "Cube Key"
+msgstr "Cube Key"
+
+#: ./form1.ec:489
+msgid "Find"
+msgstr "Find"
+
+#: ./form1.ec:511
+msgid "Found "
+msgstr "Found "
+
+#: ./form1.ec:517
+msgid "No cubes found by that name"
+msgstr "No cubes found by that name"
+
+#: ./form1.ec:334
+msgid "OpenGL"
+msgstr "OpenGL"
+
+#: ./form1.ec:334
+msgid "Run"
+msgstr "Run"
+
+#: ./form1.ec:508
+msgid "cube "
+msgstr "cube "
+
+#: ./form1.ec:572
+msgid "cube index"
+msgstr "cube index"
+
+#: ./form1.ec:349
+msgid "debug it"
+msgstr "debug it"
+
+#: ./form1.ec:486
+msgid "output"
+msgstr "output"
+

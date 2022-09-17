@@ -1,0 +1,86 @@
+[Imported Modules]
+   [This]
+      [Public]
+      [Imported Classes]
+         ecere::com::Array<int>
+            [Instantiated]
+         ecere::com::Array<const String>
+            [Instantiated]
+         ecere::com::Array<ecere::com::Array<const String> >
+            [Instantiated]
+         ecere::com::Array<ecere::com::Array<int> >
+            [Instantiated]
+         SyntaxColorScheme
+            [Instantiated]
+            [Imported Properties]
+               keywordColors
+                  [Set]
+                  [Get]
+               .
+         String
+            [Instantiated]
+         ecere::com::Module
+            [Instantiated]
+        .
+   ecere
+      [Public]
+      [Imported Classes]
+         ecere::com::Container
+            [Instantiated]
+            [Imported Methods]
+               GetCount
+                  [Virtual]
+               .
+            [Imported Properties]
+               copySrc
+                  [Set]
+               .
+         ecere::com::BuiltInContainer
+            [Instantiated]
+         ecere::com::Array
+            [Instantiated]
+            [Imported Properties]
+               size
+                  [Set]
+                  [Get]
+               .
+         ecere::com::Iterator
+            [Imported Methods]
+               Index
+               .
+            [Imported Properties]
+               data
+                  [Set]
+                  [Get]
+               .
+         ecere::gui::controls::EditLine
+            [Imported Properties]
+               text
+                  [Set]
+                  [Get]
+               count
+                  [Get]
+               next
+                  [Get]
+               .
+         ecere::gui::controls::EditSyntaxHL
+            [Imported Methods]
+               Process
+                  [Virtual]
+               InitDraw
+                  [Virtual]
+               CanImpactOtherLines
+                  [Virtual]
+               GotSpace
+                  [Virtual]
+               ResetState
+                  [Virtual]
+               .
+        .
+      [Imported Functions]
+         ecere::sys::strchrmax
+         ecere::sys::CharMatchCategories
+         ecere::sys::GetLastDirectory
+         ecere::sys::GetExtension
+        .
+   .

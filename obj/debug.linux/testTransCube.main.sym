@@ -1,0 +1,10 @@
+[Imported Modules]
+   [Private]
+   SyntaxColorScheme
+   [Private]
+   SyntaxHighlighting
+   [Private]
+   ecere
+   [Private]
+   form1
+   .

@@ -1,0 +1,73 @@
+#: ./form1.ec:95
+msgid " by that name"
+msgstr " by that name"
+
+#: ./form1.ec:154
+msgid "0"
+msgstr "0"
+
+#: ./form1.ec:42
+msgid "3dpleC"
+msgstr "3dpleC"
+
+#: ./form1.ec:107
+msgid "Add"
+msgstr "Add"
+
+#: ./form1.ec:157
+msgid "Add or find a key"
+msgstr "Add or find a key"
+
+#: ./form1.ec:149
+msgid "Added a cube."
+msgstr "Added a cube."
+
+#: ./form1.ec:154
+msgid "Cube Index"
+msgstr "Cube Index"
+
+#: ./form1.ec:153
+msgid "Cube Key"
+msgstr "Cube Key"
+
+#: ./form1.ec:74
+msgid "Find"
+msgstr "Find"
+
+#: ./form1.ec:95
+msgid "Found "
+msgstr "Found "
+
+#: ./form1.ec:101
+msgid "No cubes found by that name"
+msgstr "No cubes found by that name"
+
+#: ./form1.ec:54
+#: ./form1.ec:68
+msgid "OpenGL"
+msgstr "OpenGL"
+
+#: ./form1.ec:54
+msgid "Run"
+msgstr "Run"
+
+#: ./form1.ec:92
+msgid "cube "
+msgstr "cube "
+
+#: ./form1.ec:156
+msgid "cube index"
+msgstr "cube index"
+
+#: ./form1.ec:68
+msgid "editBox1"
+msgstr "editBox1"
+
+#: ./form1.ec:70
+msgid "for(var i=-3;i<3;i++) {\n   qb(\"a\",i,i,i);\n}\n"
+msgstr "for(var i=-3;i<3;i++) {\n   qb(\"a\",i,i,i);\n}\n"
+
+#: ./form1.ec:71
+msgid "output"
+msgstr "output"
+

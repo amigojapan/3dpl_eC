@@ -1,0 +1,129 @@
+{
+   format = "Ecere IDE Workspace File",
+   version = "0.1",
+   workspace = {
+      activeCompiler = "Default",
+      bitDepth = 0,
+      addedProjects = [
+         {
+            path = "testTransCube.epj",
+            activeConfig = "Debug"
+         }
+      ],
+      openedFiles = [
+         {
+            path = "form1.ec",
+            state = opened,
+            lineNumber = 405,
+            position = 1,
+            scroll = {
+               0,
+               6984
+            },
+            modified = "Tue Aug 16  3:40:36 PM 2022"
+         },
+         {
+            path = "gameObject.cpp",
+            state = opened,
+            lineNumber = 1,
+            position = 1,
+            scroll = {
+               0,
+               0
+            },
+            modified = "Tue Aug 16  3:39:48 PM 2022"
+         },
+         {
+            path = "../jseval/form1.ec",
+            state = opened,
+            lineNumber = 31,
+            position = 44,
+            scroll = {
+               0,
+               360
+            },
+            modified = "Tue Aug 16  3:39:48 PM 2022"
+         },
+         {
+            path = "jseval_gedamo3dpl.c",
+            state = opened,
+            lineNumber = 8,
+            position = 28,
+            scroll = {
+               0,
+               126
+            },
+            modified = "Tue Aug 16  3:39:46 PM 2022"
+         },
+         {
+            path = "../testMap/form1.ec",
+            state = closed,
+            lineNumber = 48,
+            position = 25,
+            scroll = {
+               0,
+               558
+            },
+            modified = "Mon Aug 15  8:33:02 PM 2022"
+         },
+         {
+            path = "../jseval/jseval3.c",
+            state = closed,
+            lineNumber = 1,
+            position = 1,
+            scroll = {
+               0,
+               0
+            },
+            modified = "Sat Aug  6  1:53:23 PM 2022"
+         },
+         {
+            path = "Untitled 1",
+            state = closed,
+            lineNumber = 41,
+            position = 13,
+            scroll = {
+               0,
+               648
+            },
+            modified = "Fri Apr  8  2:16:34 PM 2022"
+         },
+         {
+            path = "../jseval/jseval_gedamo1.c",
+            state = closed,
+            lineNumber = 54,
+            position = 2,
+            scroll = {
+               0,
+               846
+            },
+            modified = "Sat Aug  6  2:16:47 PM 2022"
+         },
+         {
+            path = "../testMap/form2.ec",
+            state = opened,
+            lineNumber = 74,
+            position = 1,
+            scroll = {
+               0,
+               1026
+            },
+            modified = "Tue Aug 16  3:40:03 PM 2022"
+         }
+      ],
+      recentFiles = [
+         "/home/amigojapan/projects/3dpl2/testTransCube/form1.ec",
+         "/home/amigojapan/projects/3dpl2/testMap/form2.ec",
+         "/home/amigojapan/projects/3dpl2/testTransCube/gameObject.cpp",
+         "/home/amigojapan/projects/3dpl2/jseval/form1.ec",
+         "/home/amigojapan/projects/3dpl2/testTransCube/jseval_gedamo3dpl.c",
+         "/home/amigojapan/projects/3dpl2/testMap/form1.ec",
+         "/home/amigojapan/projects/3dpl2/testTransCube/Untitled 1",
+         "/home/amigojapan/projects/3dpl2/jseval/jseval_gedamo1.c",
+         "/home/amigojapan/projects/3dpl2/jseval/jseval3.c",
+         "/home/amigojapan/ecere/ecere-sdk/samples/3D/testTransCube/form1.ec"
+      ],
+      vgLeakCheck = summary,
+      vgRedzoneSize = -1
+   }
+}
