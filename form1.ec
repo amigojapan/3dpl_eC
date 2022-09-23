@@ -254,13 +254,100 @@ DisplaySystem ds;
 
 ModelViewer modelViewer { };
 
+Time deltaTime;
 
 class eModelApp : GuiApplication
 {
    driver = "OpenGL";
    //driver = "Direct3D8";
    //driver = "Direct3D";
+
+   timerResolution = 60;//60FPS
+   bool Cycle(bool idle)
+   {
+      //static Time lastTime;
+      Time time;
+      //Time diffTime = time - lastTime;
+      //Time time;
+      static Time lTime;
+      time = GetTime();
+      if(!lTime) {
+         lTime = time;
+      }
+      deltaTime = time - lTime;
+
+      //ec_3dpl_mv("a",1,0,0);
+
+      return true;
+   }
 }
+
+void ec_3dpl_mv(char const *cubeName, float x,float y, float z)
+{
+      // String stringColor; //="white";
+   MapIterator<String, Array<MyCube>> it { map = cubesMap };
+   Array<MyCube> cubesArray;
+   Transform t;
+   // MyCube currentCube {};
+   //Transform t;
+   //Material m { };
+   //Color c;
+
+   // stringColor=CopyString(color);
+   // currentCube.Initialize();
+   // 'true' is for 'create if not found'
+   if(it.Index(cubeName, true))
+   {
+      if(!it.data) {
+         printf("\nit.data is empry");
+         return;
+      }
+      printf("\nit.data is not empry");
+      // cubes already exists
+      cubesArray = it.data;
+      if(!cubesArray) {
+         printf("\ncubesArray is empry");
+         return;
+      }
+      printf("\ncubesArray is not empry");
+      //c.OnGetDataFromString(color);
+      for(currentCube : cubesArray)
+      {
+         printf("\n\ncurrentCube is %d");
+            t = currentCube.transform;
+            //t.position.Add(
+            //t.position.Add({x * deltaTime, y * deltaTime, z * deltaTime});
+            t.position.x += x * deltaTime;
+            t.position.y += y * deltaTime;
+            t.position.z += z * deltaTime; 
+            currentCube.transform = t;
+            //12:30 AM <ESphynx> amigojapan: you will need to do cube.updateTransform() in the end
+            currentCube.UpdateTransform();
+      }
+      //scene.UpdateTransform();
+      //modelViewer.Update(null);
+   }
+   else
+   {//cube does not exist
+      printf("\n\ncube \"%s\" does not exist", cubeName);
+      //modelViewer.lblOutput.caption="tried to set cube's ", buf1," color, but no such cube exists.";
+   }
+   //cubesArray.Add(currentCube);
+
+   //currentCube.Initialize();
+   //currentCube.transform = { position = { deltaTime * x, deltaTime * -y, deltaTime * z } };
+   //currentCube.transform.position.x=currentCube.transform.position.x+(x*deltaTime);
+
+   //currentCube.Duplicate(modelViewer.model);
+   //currentCube.material = m;
+
+
+   //scene.Add(currentCube);
+   //scene.UpdateTransform();
+
+   //modelViewer.Update(null);
+}
+
 
 class ModelViewer : Window
 {
