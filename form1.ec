@@ -276,7 +276,7 @@ class eModelApp : GuiApplication
       }
       deltaTime = time - lTime;
 
-      //ec_3dpl_mv("a",1,0,0);
+      ec_3dpl_mv("a",0,0.01f,0);
 
       return true;
    }
@@ -296,7 +296,7 @@ void ec_3dpl_mv(char const *cubeName, float x,float y, float z)
    // stringColor=CopyString(color);
    // currentCube.Initialize();
    // 'true' is for 'create if not found'
-   if(it.Index(cubeName, true))
+   if(it.Index(cubeName, false))
    {
       if(!it.data) {
          printf("\nit.data is empry");
@@ -317,15 +317,15 @@ void ec_3dpl_mv(char const *cubeName, float x,float y, float z)
             t = currentCube.transform;
             //t.position.Add(
             //t.position.Add({x * deltaTime, y * deltaTime, z * deltaTime});
-            t.position.x += x * deltaTime;
-            t.position.y += y * deltaTime;
-            t.position.z += z * deltaTime; 
+            t.position.x += (x * deltaTime);
+            t.position.y += (y * deltaTime);
+            t.position.z += (z * deltaTime); 
             currentCube.transform = t;
             //12:30 AM <ESphynx> amigojapan: you will need to do cube.updateTransform() in the end
             currentCube.UpdateTransform();
       }
-      //scene.UpdateTransform();
-      //modelViewer.Update(null);
+      scene.UpdateTransform();
+      modelViewer.Update(null);
    }
    else
    {//cube does not exist
@@ -959,11 +959,10 @@ void ec_3dpl_qb(char const *cubeName, float x,float y, float z)
    m.diffuse = lime, m.ambient = lime;
 
    // 'true' is for 'create if not found'
-   if(it.Index(cubeName, true))
+   if(it.Index(cubeName, true) && it.data){
       // cubes already exists
       cubesArray = it.data;
-   else
-   {
+   }else{
       // create a new cube array
       cubesArray = { };
       // add it in place to the map
