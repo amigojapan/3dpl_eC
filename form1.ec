@@ -288,6 +288,7 @@ void ec_3dpl_mv(char const *cubeName, float x,float y, float z)
    MapIterator<String, Array<MyCube>> it { map = cubesMap };
    Array<MyCube> cubesArray;
    Transform t;
+   Vector3D v;
    // MyCube currentCube {};
    //Transform t;
    //Material m { };
@@ -313,14 +314,27 @@ void ec_3dpl_mv(char const *cubeName, float x,float y, float z)
       //c.OnGetDataFromString(color);
       for(currentCube : cubesArray)
       {
-         printf("\n\ncurrentCube is %d");
+         //printf("\n\ncurrentCube is %d");
+
+/*
             t = currentCube.transform;
+
             //t.position.Add(
             //t.position.Add({x * deltaTime, y * deltaTime, z * deltaTime});
             t.position.x += (x * deltaTime);
             t.position.y += (y * deltaTime);
             t.position.z += (z * deltaTime); 
             currentCube.transform = t;
+*/
+
+            //currentCube.transform.orientation.ToDirection(v);
+            //currentCube.Move(v);
+            //currentCube.Move(Vector3D(x,y,z));
+
+            //currentCube.transform.orientation.ToDirection(v);
+            //currentCube.Move({v.x * deltaTime, v.y * deltaTime, v.z * deltaTime});
+            currentCube.Move({x * deltaTime,y * deltaTime,z * deltaTime});
+
             //12:30 AM <ESphynx> amigojapan: you will need to do cube.updateTransform() in the end
             currentCube.UpdateTransform();
       }
