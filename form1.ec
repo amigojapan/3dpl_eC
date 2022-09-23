@@ -420,7 +420,6 @@ class ModelViewer : Window
       strcpy(in,out);
       return in;
    }
-
    String preprocessor(const String code)
    {
       // const Color = { red: 'red', blue: 'blue', green: 'green' };
@@ -457,7 +456,24 @@ class ModelViewer : Window
       // EscapeCString() might be taking care of that... ChangeCh(JS, '\n', ' ');
 
       result = evalgedamo(JS);
+
+      codeLen = strlen(result);
+      allocLen = codeLen * 3;
+      tmp = new char[allocLen+1];
+      JS.copy("");
+      JS.concat("let regex = /for\\s*\\((?<CONDITION>[^\\)]+)\\)\\s*\\{*(?<WHILE_BODY>[^\\}]+)*\\}/g;");
+      JS.concat("let replacement = \"loopstarttime = Date.now();  for($<CONDITION>) { now=Date.now(); if(now>=loopstarttime+5){result(\\\"loop timeout\\\");break;}$<WHILE_BODY> }\";");
+      JS.concat("let str = \"");
+      EscapeCString(tmp, allocLen, result, { escapeDoubleQuotes = true });
+      JS.concat(tmp);
+      delete tmp;
+
+      JS.concat("\";");
+      JS.concat("result(str.replaceAll(regex, replacement));");
+      // EscapeCString() might be taking care of that... ChangeCh(JS, '\n', ' ');
+      result = evalgedamo(JS);
       printf("\nJS=\n   %s\nR=\n   %s\noutputgedamo\n   %s\n",(String)JS,result,outputgedamo);
+
       delete JS;
 
       return result;
