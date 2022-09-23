@@ -13,7 +13,7 @@ static JSValue js_3dpl_qb(JSContext *ctx, JSValueConst this_val,
    char o2[1000];
    if(cubesCount>cubesMaxCout) {
       strcpy(outputgedamo, "");
-      sprintf(outputgedamo,"max xubes reaches reached, max is;");
+      sprintf(outputgedamo,"max cubes reaches reached, max is;");
       //strcat(outputgedamo,itoa(cubesMaxCout));
       strcat(outputgedamo, "you can set this value with setCubesCout(number");
       return this_val;
