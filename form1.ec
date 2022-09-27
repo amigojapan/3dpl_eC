@@ -277,26 +277,17 @@ class eModelApp : GuiApplication
       deltaTime = time - lTime;
 
       ec_3dpl_mv("a",0,0.01f,0);
+      //ec_3dpl_dl("a");
 
       return true;
    }
 }
 
-void ec_3dpl_mv(char const *cubeName, float x,float y, float z)
-{
-      // String stringColor; //="white";
+void ec_3dpl_mv(char const *cubeName, float x,float y, float z) {
    MapIterator<String, Array<MyCube>> it { map = cubesMap };
    Array<MyCube> cubesArray;
-   Transform t;
-   Vector3D v;
-   // MyCube currentCube {};
    //Transform t;
-   //Material m { };
-   //Color c;
-
-   // stringColor=CopyString(color);
-   // currentCube.Initialize();
-   // 'true' is for 'create if not found'
+   //Vector3D v;
    if(it.Index(cubeName, false))
    {
       if(!it.data) {
@@ -314,28 +305,7 @@ void ec_3dpl_mv(char const *cubeName, float x,float y, float z)
       //c.OnGetDataFromString(color);
       for(currentCube : cubesArray)
       {
-         //printf("\n\ncurrentCube is %d");
-
-/*
-            t = currentCube.transform;
-
-            //t.position.Add(
-            //t.position.Add({x * deltaTime, y * deltaTime, z * deltaTime});
-            t.position.x += (x * deltaTime);
-            t.position.y += (y * deltaTime);
-            t.position.z += (z * deltaTime); 
-            currentCube.transform = t;
-*/
-
-            //currentCube.transform.orientation.ToDirection(v);
-            //currentCube.Move(v);
-            //currentCube.Move(Vector3D(x,y,z));
-
-            //currentCube.transform.orientation.ToDirection(v);
-            //currentCube.Move({v.x * deltaTime, v.y * deltaTime, v.z * deltaTime});
             currentCube.Move({x * deltaTime,y * deltaTime,z * deltaTime});
-
-            //12:30 AM <ESphynx> amigojapan: you will need to do cube.updateTransform() in the end
             currentCube.UpdateTransform();
       }
       scene.UpdateTransform();
@@ -344,24 +314,75 @@ void ec_3dpl_mv(char const *cubeName, float x,float y, float z)
    else
    {//cube does not exist
       printf("\n\ncube \"%s\" does not exist", cubeName);
-      //modelViewer.lblOutput.caption="tried to set cube's ", buf1," color, but no such cube exists.";
    }
-   //cubesArray.Add(currentCube);
-
-   //currentCube.Initialize();
-   //currentCube.transform = { position = { deltaTime * x, deltaTime * -y, deltaTime * z } };
-   //currentCube.transform.position.x=currentCube.transform.position.x+(x*deltaTime);
-
-   //currentCube.Duplicate(modelViewer.model);
-   //currentCube.material = m;
-
-
-   //scene.Add(currentCube);
-   //scene.UpdateTransform();
-
-   //modelViewer.Update(null);
 }
 
+void ec_3dpl_dl(const String cubeName)
+{
+   MapIterator<String, Array<MyCube>> it { map = cubesMap };
+   if(it.Index(cubeName, false))
+   {
+      Array<MyCube> cubesArray = it.data;
+      if(cubesArray)
+      {
+         for(c : cubesArray)
+         {
+            MyCube cube = c;
+            Material m = cube.material;
+            delete m;
+            cube.material = null;
+            scene.Remove(cube);
+            delete cube;
+         }
+         it.Remove();
+         delete cubesArray;
+         modelViewer.Update(null);
+      }
+   }
+   else
+      printf("\n\ncube \"%s\" does not exist", cubeName);
+}
+/*
+void ec_3dpl_dl(char const *cubeName) {
+   MapIterator<String, Array<MyCube>> it { map = cubesMap };
+   Array<MyCube> cubesArray;
+   //Transform t;
+   //Vector3D v;
+   if(it.Index(cubeName, false))
+   {
+      if(!it.data) {
+         printf("\nit.data is empry");
+         return;
+      }
+      printf("\nit.data is not empry");
+      // cubes already exists
+      cubesArray = it.data;
+      if(!cubesArray) {
+         printf("\ncubesArray is empry");
+         return;
+      }
+      printf("\ncubesArray is not empry");
+      //c.OnGetDataFromString(color);
+      for(currentCube : cubesArray)
+      {
+            Material m = currentCube.material;
+            delete m;
+            currentCube.material = null;
+            currentCube.UpdateTransform();
+            scene.Remove(currentCube);
+            delete currentCube;
+            //currentCube.Free(displaySystem);
+      }
+      it.Remove();
+      //scene.UpdateTransform();
+      modelViewer.Update(null);
+   }
+   else
+   {//cube does not exist
+      printf("\n\ncube \"%s\" does not exist", cubeName);
+   }
+}
+*/
 
 class ModelViewer : Window
 {
