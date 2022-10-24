@@ -37,10 +37,10 @@
    ],
    "Files" : [
       "form1.ec",
-      "jseval_gedamo3dpl.c",
       "3dplJSlib.js",
       "$(ECERE_SDK_SRC)/ide/src/designer/SyntaxColorScheme.ec",
-      "$(ECERE_SDK_SRC)/ide/src/designer/SyntaxHighlighting.ec"
+      "$(ECERE_SDK_SRC)/ide/src/designer/SyntaxHighlighting.ec",
+      "collision_detection.ec"
    ],
    "ResourcesPath" : "",
    "Resources" : [
